@@ -37,7 +37,7 @@
             <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
             <ul class="main-menu active">
                 <li class="main-menu-item"><a href="index.html">Home</a></li>
-                <li class="main-menu-item"><a href="about.html">About</a></li>
+                <li class="main-menu-item"><a href="team.html">About</a></li>
                 <li class="main-menu-item"><a href="about.html">Our Mission</a></li>
                 <li class="main-menu-item" id="research-menu-item"><a tabindex="0" href="research.html">Research</a></li>
                 <li class="main-menu-item"><a tabindex="0" href="contact.html">Contact Us</a></li>
@@ -54,7 +54,8 @@
         </nav>
         
         
-        <form action="contact.php" method="post">
+        <!-- <form action="contact.php" method="post"> -->
+        <form action="https://formspree.io/f/xlevelwl" method="post">
             <div class="splitscreen">
                 <div class="elem-group">
                     <input type="text" class="left split" id="name" name="visitor_name" placeholder="Name *" pattern=[A-Z\sa-z]{3,20} required>
@@ -64,7 +65,8 @@
                 </div>
             </div>
             <div class="elem-group">
-                <input type="text" id="title" name="email_title" required placeholder="Subject" pattern=[A-Za-z0-9\s]{8,60}>
+                <input type="text" id="title" name="email_title" placeholder="Subject" >
+                <!-- pattern=[A-Za-z0-9\s]{8,60} -->
             </div>
             <div class="elem-group">
                 <!-- <label for="message">Write your message</label> -->
@@ -80,6 +82,7 @@
                     <option value="technical support">Other</option>
                 </select>
             </div> -->
+            <input type="hidden" name="_next" value="//teamgahsp.github.io/index.html" />
         </form>
         
     </div>
